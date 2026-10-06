@@ -18,6 +18,8 @@ The generated dataset contains **5,000 customers** with:
 
 The churn probability is generated from those features with controlled randomness, then the model sees only the finished dataset—not the formula used to create the target.
 
+One important limitation of this setup is that the synthetic churn score is built mostly from additive feature effects. That structure is naturally friendly to Logistic Regression, so I do **not** treat the model comparison as a neutral benchmark of Logistic Regression versus Random Forest. The useful part of the project is the reproducible preprocessing/evaluation workflow and the interpretation of the metrics.
+
 ## Models compared
 
 - Logistic Regression
